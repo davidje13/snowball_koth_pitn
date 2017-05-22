@@ -48,12 +48,13 @@ losses, 0 draws in the first batch of 1000 games, and 509 wins, 491 losses, 0 dr
 
 ## manager.sh
 
-This is a simple script which runs a number of games between 2 agents and records the winner.
+This is a simple script which runs a number of games between 2 agents and records the winner. It will always run games with
+max_snowballs = 50, initial_ducks = 25, and max_turns = 1000.
 
 Usage:
 
 ```
-./manager.sh <agent_1> <agent_2> <max_turns>
+./manager.sh <agent_1> <agent_2> <total_games>
 
 # e.g.:
 ./manager.sh ./pain_in_the_nash ./save_one.sh 1000
